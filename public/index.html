@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OneHealth - Sign In</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="login-form">
+            <header>
+                <h2>Sign In</h2>
+            </header>
+            <section class="sign-in-options">
+                <div class="buttons">
+                    <button id="patient-sign-in">Sign in as Patient</button>
+                    <button id="institute-sign-in">Sign in as Medical Institute</button>
+                </div>
+            </section>
+            <div class="sign-up-text">
+                <p>Sign up for new user <a href="#" id="sign-up-link">Sign up</a></p>
+            </div>
+        </div>
+        <div class="logo">
+            <img src="\images/one.png" alt="OneHealth Logo">
+        </div>
+    </div>
+    <div class="sign-up-container" id="sign-up-container">
+        <div class="sign-up-form">
+            <header>
+                <h2>Sign Up</h2>
+            </header>
+            <form id="sign-up-form">
+                <label for="aadhar">Enter your Aadhaar Number:</label>
+                <input type="text" id="aadhar" name="aadhar" required>
+                <button type="submit">Submit</button>
+            </form>
+            <form id="otp-form" style="display: none;">
+                <label for="otp">Enter OTP:</label>
+                <input type="text" id="otp" name="otp" required>
+                <button type="submit">Verify OTP</button>
+            </form>
+            <div id="message"></div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
